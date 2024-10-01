@@ -1,0 +1,1 @@
+select name, count(person_id) as cnt from (select * from crew natural join people where category='actor' or category='actress') group by name order by cnt desc limit 20;

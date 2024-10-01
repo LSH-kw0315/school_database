@@ -1,0 +1,1 @@
+select sum(credits) from student, course natural join takes where student.ID = '45678';

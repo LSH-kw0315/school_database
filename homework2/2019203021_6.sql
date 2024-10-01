@@ -1,0 +1,1 @@
+select distinct name from student, course natural join takes where semester = 'Spring';

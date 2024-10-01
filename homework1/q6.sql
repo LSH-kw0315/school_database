@@ -1,0 +1,1 @@
+select primary_title, votes from people natural join crew natural join titles natural join ratings where name like '%Leonardo%' and born = 1974 ORDER BY votes desc limit 10;

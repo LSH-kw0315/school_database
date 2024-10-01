@@ -1,0 +1,1 @@
+select ID, name from instructor natural left outer join teaches except select ID,name from instructor natural join teaches;

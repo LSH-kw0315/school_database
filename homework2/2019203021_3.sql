@@ -1,0 +1,1 @@
+select distinct course_id, title from student, course natural join takes where student.ID = '45678';

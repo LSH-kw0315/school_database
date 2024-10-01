@@ -1,0 +1,1 @@
+select premiered, primary_title, rating from (select premiered,primary_title,rating, RANK() OVER(PARTITION BY premiered ORDER BY rating DESC) as rating_rank from titles natural join ratings where type = 'videoGame' and premiered >= 2010) where rating_rank=1 order by premiered, primary_title;

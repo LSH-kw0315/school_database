@@ -1,0 +1,1 @@
+select distinct name, died-born as age from people natural join crew  where died is not null and born is not null and category='director' order by age desc limit 20;

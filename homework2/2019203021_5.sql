@@ -1,0 +1,1 @@
+select ID, sum(credits) from student, course natural join takes group by ID;

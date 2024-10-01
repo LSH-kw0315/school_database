@@ -1,0 +1,1 @@
+select ID from student natural left outer join takes except select ID from student natural join takes;
